@@ -21,4 +21,12 @@ public class EmployeePayrollServiceTest {
         employeePayrollService.printData();
         assertEquals(3,entries);
     }
+    @Test
+    public void givenFileOnReadingFromFileShouldMatchEmployeeCout() {
+        EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+        long entries=employeePayrollService.readEmployeePayrollData();
+        assertEquals(3,entries);
+    }
+    
+    
 }

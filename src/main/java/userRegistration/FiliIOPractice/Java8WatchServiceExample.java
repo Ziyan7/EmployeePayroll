@@ -48,7 +48,7 @@ public class Java8WatchServiceExample {
 	@SuppressWarnings({"rawtypes","unchecked"})
 	void processEvents() {
 		while(true) {
-			WatchKey Key;//wait for key to be signalled
+			WatchKey Key;//wait for key to be signaled
 			try {
 				Key = watcher.take();
 			}catch(InterruptedException x) {
